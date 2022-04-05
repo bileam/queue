@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<conio.h>
 #define MAX 3
 
 typedef struct {
@@ -112,20 +113,30 @@ int main()
         switch(pilih)
         {
         case 1:
+            system("cls");
             printf("Data = ");
             scanf("%d", &data);
             Enqueue(data);
+            getch();
         break;
         case 2:
+             system("cls");
             printf("Data yang keluar : %d", Dequeue());
+            getch();
         break;
         case 3:
+             system("cls");
             Display();
+            getch();
         break;
         case 4:
             Destroy();
+            system("cls");
+            getch();
         break;
         case 5:
+            system("cls");
+            getch();
             printf("Terima Kasih :)");
             exit(0);
         break;
